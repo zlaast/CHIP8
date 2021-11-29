@@ -11,11 +11,11 @@ class Chip8
 	public:
 		Chip8();										// Class constructor
 		bool load_rom(string rom_name);					// Loads ROM into memory
-		void process();									// Process opcodes
+		void process();									// Processes opcodes
 
-		int screen_width = 64;							// Display width
-		int screen_height = 32;							// Display height
-		uint32_t screen[64 * 32];						// Display buffer
+		int screen_width = 64;							// Screen display width
+		int screen_height = 32;							// Screen display height
+		uint32_t screen[64 * 32];						// Screen display buffer
 
 		uint8_t keypad[16];								// Hex keypad input
 
